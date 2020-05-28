@@ -9,6 +9,8 @@ urlpatterns = [
     path('players/<int:pk>/edit/', views.player_edit, name='player_edit'),
     path('players/new/',views.player_new, name='player_new'),
     path('playerDelete/<int:pk>/', views.player_delete, name="player_delete"),
-    path('dashboard/', views.dashboard, name='dashboard'),
+    path('', views.dashboard, name='dashboard'),
     path('gamepage/', views.game_page, name='game_page'),
+    path('calls/', views.call, name='call'),
+    #path('callDelete/<int:pk>/', views.call_delete, name="call_delete"),
 ]
