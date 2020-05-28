@@ -1,0 +1,114 @@
+<style>
+    *{
+      <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+    }
+    .container{
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    #grid-container{
+        margin-top: 20px;
+        max-width: 750;
+        width: 100%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: White;
+    }
+    .num{
+        width: 9%;
+        margin: 2px;
+        border: 1px solid #CCC;
+        display: inline-block;
+        color: Black;
+        font-size: 24px;
+        box-sizing: border-box;
+    }
+    .generated{
+        border-color: Black;
+        color: White;
+        background-color: Black;
+    }
+
+    #number{
+        font-size: 60px;
+        text-align: center;
+        color: Black;
+        font-weight: bold;
+        margin-top: 00px;
+        display: inline-block;
+        background-color: White;
+        padding: 00px;
+        border-radius: 10px;
+        border:0px solid White;
+    }
+
+    #btn-generate{
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background-color: Black;
+        color: white;
+        width: 100px;
+        font-size: 14px;
+        padding: 10px;
+        cursor: pointer;
+        border:1px solid Black;
+        border-radius: 5px;
+    }
+    #btn-generate:active{
+        position: relative;
+        left: 1;
+        top: 1;
+    }
+
+    a:link, a:visited{
+        color: Black;
+        text-decoration: none;
+    }
+
+    a:hover{
+        color: red;
+    }
+
+
+    @media screen and (max-width: 799px) {
+        .container{
+            width: 100%;
+        }
+
+        #generator-container{
+            position: relative;
+            left: 0;
+            top: 0;
+            display: block;
+        }
+
+        #grid-container{
+            width: 100%;
+        }
+
+        .num{
+            padding: 0px;
+            font-size: 14px;
+            margin: 1px;
+        }
+    }
+
+    @media screen and (min-width: 800px) and (max-width: 1300px){
+        #grid-container{
+            width: 600px;
+            height: 600px;
+        }
+    }
+
+    #footer{
+                font-size: 14px;
+                text-align: center;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                color: Black;
+            }
+
+
+</style>

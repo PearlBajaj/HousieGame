@@ -1,0 +1,45 @@
+{% extends 'housie/base.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+<!doctype html>
+<html lang="en">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <div class="card rounded shadow">
+        <h4 class="card-header text-white bg-info">Players
+        </h4>
+        <div class="card-body">
+          {% if players %}
+          <div class="player_form">
+            <table class="table border-table table-hover" style="text-align: center;">
+              <thead>
+                <tr>
+                  <th scope="col">Name</th>
+                  <th scope="col">Email</th>
+                  <th scope="col">No. of tickets</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for player in players %}
+                <div class="player">
+                  <tr>
+                    <td class="text-capitalize"><a href="{% url 'player_edit' pk=player.pk %}">{{player.name}}</a></td>
+                    <td><a href="{% url 'player_edit' pk=player.pk %}">{{ player.email }}</a></td>
+                    <td><a href="{% url 'player_edit' pk=player.pk %}">{{ player.no_tickets}}</a></td>
+                    <td><a href="{% url 'player_delete' pk=player.pk %}" class="btn btn-danger">X</a></td>
+                  </tr>
+                </div>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+          {% else %}
+          <p class = "text-center">Sorry you havent added any players yet!</p>
+          <p class = "text-center"> Click the add button on the top right to get started.</p>
+          {% endif %}
+          <a href="{% url 'player_new' %}" class="align-self-end btn btn-sm btn-outline-secondary">Add Player</a>
+        </div>
+      </div>
+    </div>
+  </div
+  {%endblock%}
