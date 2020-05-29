@@ -1,4 +1,8 @@
 # HousieGame
+Housie is a indian version of bingo, this website is to assist users in managing the game online especially during times of quarantine.
+
+NOTE: This project is not complete and I'm still working on it. 
+
 Instructions to run
 1. Go to terminal
 2. cd to the folder where the repository is cloned
